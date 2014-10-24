@@ -12,6 +12,9 @@ public class Patron {
         b2 = null;
         b3 = null;
     }
+    public String getName(){
+        return Name;
+    }
     public boolean canBorrow(){
         if (b1 == null)  return true;
         else if (b2 == null) return true;
@@ -19,10 +22,19 @@ public class Patron {
         else return false;
         
     }
-    public boolean borrow(){
-        if (canBorrow() == true){
-            
+    public boolean borrow(Book b){
+        if (b1 == null){
+            b1 = b;
+            return true;
         }
-        
+        else if (b2 == null){
+            b2 = b;
+            return true;
+        }
+        else if (b3 == null){
+            b3 = b;
+            return true;
+        }
+        else return false;
     }
 }
