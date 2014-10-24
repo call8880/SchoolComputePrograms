@@ -23,5 +23,18 @@ public class libraryInterface {
         Patron p = new Patron("Miles Davis");
         //System.out.println(p);
         
+        //lend out the books 
+        System.out.println("Lending books to " + p.getName());
+        if (p.borrow(b1)) System.out.println(b1.getTitle() + "succesfully borrowed");
+        else              System.out.println(b1.getTitle() + "could not be borrowed");
+        
+        if (p.borrow(b2)) System.out.println(b2.getTitle() + "succesfully borrowed");
+        else              System.out.println(b2.getTitle() + "could not be borrowed");
+        
+        if (p.borrow(b3)) System.out.println(b3.getTitle() + "succesfully borrowed");
+        else               System.out.println(b3.getTitle() + "could not be borrowed");
+            
+        if (p.borrow(b4)) System.out.println(b3.getTitle() + "succesfully borrowed");
+        else               System.out.println(b4.getTitle() + "could not be borrowed");
     }
 }
