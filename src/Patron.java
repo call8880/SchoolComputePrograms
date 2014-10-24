@@ -37,4 +37,9 @@ public class Patron {
         }
         else return false;
     }
+    public void returnBook(Book b){
+        if (b == b1) b1 = null;
+        else if (b == b2) b2 = null;
+        else if (b == b3) b3 = null;
+    }
 }
