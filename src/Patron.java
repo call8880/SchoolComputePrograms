@@ -42,4 +42,5 @@ public class Patron {
         else if (b == b2) b2 = null;
         else if (b == b3) b3 = null;
     }
+    public boolean 
 }
