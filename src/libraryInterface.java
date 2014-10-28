@@ -39,6 +39,14 @@ public class libraryInterface {
         
         //return books
         System.out.println("-------------\nAttempting to return the first book\n-------------");
-        
+        if (p.returnBook(b1)) {
+            System.out.println(b1.getTitle() + "sucessfully returned");
+        }
+        else System.out.println(b1.getTitle() + "was not borrowed");
+        if (p.hasBook(b1)) System.out.println(b1);
+        if (p.hasBook(b2)) System.out.println(b2);
+        if (p.hasBook(b3)) System.out.println(b3);
+        if (p.hasBook(b4)) System.out.println(b4);
+        if (p.hasBook(b5)) System.out.println(b5);
     }
 }
