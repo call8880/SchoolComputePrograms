@@ -38,7 +38,7 @@ public class libraryInterface {
         else               System.out.println(b4.getTitle() + "could not be borrowed");
         
         //return books
-        System.out.println("-------------\nAttempting to return the first book\n-------------");
+        System.out.println("\n-------------\nAttempting to return the first book\n-------------");
         if (p.returnBook(b1)) {
             System.out.println(b1.getTitle() + "sucessfully returned");
         }
