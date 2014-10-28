@@ -37,10 +37,25 @@ public class Patron {
         }
         else return false;
     }
-    public void returnBook(Book b){
-        if (b == b1) b1 = null;
-        else if (b == b2) b2 = null;
-        else if (b == b3) b3 = null;
+    public boolean returnBook(Book b){
+        if (b == b1){
+            b1 = null;
+            return true;
+        }
+        else if (b == b2){
+            b2 = null;
+            return true;
+        }
+        else if (b == b3){
+            b3 = null;
+            return true;
+        }
+        else return false;
     }
-    public boolean 
+    public boolean hasBook(Book b){
+        if (b == b1) return true;
+        else if (b == b2) return true;
+        else if (b == b3) return true;
+        else return false;
+    }
 }
