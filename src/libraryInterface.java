@@ -43,6 +43,8 @@ public class libraryInterface {
             System.out.println(b1.getTitle() + "sucessfully returned");
         }
         else System.out.println(b1.getTitle() + "was not borrowed");
+        //the books still borrowed
+        System.out.println("\n-------------\nBooks still borrowed by " + p.getName() +"\n-------------");
         if (p.hasBook(b1)) System.out.println(b1);
         if (p.hasBook(b2)) System.out.println(b2);
         if (p.hasBook(b3)) System.out.println(b3);
